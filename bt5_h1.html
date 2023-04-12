@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let star1 = ['Polaris', 'Aldebaran', '', 'Vega', 'Altair', 'Dubhe', 'Regulus'];
+        let star2 =['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'leo'];
+        let star3 = prompt('');
+        function myfunction(n){
+            for(i=0; i<star1.length; i++){
+                if(n == star1[i]){
+                    for(j=0; j<star2.length; j++){
+                       a = star2[i]; // star2[i] nó sẽ trả về giá trị tương ứng trên  star1;
+                       document.writeln(a);
+                       break;
+                   } 
+                }
+            
+            }
+           
+           
+
+        }
+        myfunction(star3);
+   
+    </script>
+    
+</body>
+</html>
