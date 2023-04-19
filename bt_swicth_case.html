@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         let month = parseInt(prompt("nhập vào một tháng trong năm"));
+    switch (month) {
+        case 1:
+        case 3:
+        case 5:
+        case 7:
+        case 8:
+        case 10:
+        case 12:
+            alert("tháng " + month + " có 31 ngày");
+            break
+        case 2:
+            alert("tháng " + month + " có 28 hoặc 29 ngày");
+            break;
+        case 4:
+        case 6:
+        case 9:
+        case 10:
+            alert("tháng " + month + " có 30 ngày");
+            break;
+        default :
+            alert("không phải là tháng trong năm");
+
+    }
+    </script>
+    
+</body>
+</html>

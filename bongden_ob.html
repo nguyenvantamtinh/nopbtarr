@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class switchbutton{
+            constructor(lamp){
+                this.status=false;
+                this.lamp=lamp;
+            }
+            bluetool(){
+                console.log('kết nối thành công lamp và button');
+            }
+            off(){
+                this.status = false;
+                console.log('button off'); 
+
+            }
+            on(){
+                this.status= true;
+                console.log('button on');
+            }
+        }
+        class ElectricLamp{
+            constructor(){
+                this.status=false;
+            }
+            of_lamp(){
+                this.status=false;
+                console.log('đèn tắt');
+            }
+            on_lamp(){
+                this.status = true;
+                console.log('đèn sáng');
+            }
+        }
+
+
+
+        let myswitchbutton = new switchbutton();
+        let myelectriclamp = new ElectricLamp();
+       
+        for(i=0; i<2; i++){
+            myswitchbutton.on()
+        myelectriclamp.on_lamp()
+        myswitchbutton.off()
+        myelectriclamp.of_lamp()
+       
+
+        }
+
+        // lamp.on();
+        // lamp.off()
+       
+   
+
+
+
+
+      
+     
+    </script>
+    
+</body>
+</html>

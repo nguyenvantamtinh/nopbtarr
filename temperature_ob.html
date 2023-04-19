@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // function Temperature(doc){
+        //     this.doc=doc;
+        //     this.dof = function(){
+        //         return doc*1.8000+32.00;
+        //     };
+        //     this.dokevin = function(){
+        //         return doc + 273.15;
+        
+        //     };
+        // }
+        // let myTemperature = new Temperature(4);
+        // console.log(myTemperature.dof());
+        // console.log(myTemperature.dokevin());
+
+
+
+        // dùng class
+        class Temperature{
+            constructor(doc){
+                this.doc = doc;
+            };
+            dof(){
+                return this.doc*1.8000+32.00;
+            }
+            dokevin(){
+                return this.doc + 273.15;
+            }
+
+            
+        }
+        let myTemperature = new Temperature(4);
+        console.log(myTemperature.dof()+' độ f');
+        console.log(myTemperature.dokevin()+ ' độ kenvin');
+    </script>
+    
+</body>
+</html>
